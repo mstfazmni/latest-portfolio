@@ -1,29 +1,76 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import { AnimatePresence } from "framer-motion"; //smooth scrolling
+import { AnimatePresence, motion } from "framer-motion";
 import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Works from "./pages/Works";
 import Contact from "./pages/Contact";
 
 
-function App () {
+const App = () => {
   return (
     <Router>
+      
       <Navbar />
-      <AnimatePresence exitBeforeEnter>
-      <Routes>
-        <Route path="/" element={<Home/>} />
-        <Route path="/about" element={<About/>} />
-        <Route path="/works" element={<Works />} />
-        <Route path="/contact" element={<Contact/>} />
-      </Routes>
+      <AnimatePresence mode="wait">
+        <Routes>
+          <Route 
+            path="/" 
+            element={
+              <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                transition={{ duration: 0.5 }}
+              >
+                <Home />
+              </motion.div>
+            } 
+          />
+          <Route 
+            path="/about" 
+            element={
+              <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                transition={{ duration: 0.5 }}
+              >
+                <About />
+              </motion.div>
+            }
+          />
+          <Route 
+            path="/works" 
+            element={
+              <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                transition={{ duration: 0.5 }}
+              >
+                <Works />
+              </motion.div>
+            }
+          />
+          <Route 
+            path="/contact" 
+            element={
+              <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                transition={{ duration: 0.5 }}
+              >
+                <Contact />
+              </motion.div>
+            }
+          />
+        </Routes>
       </AnimatePresence>
-      <Footer />
     </Router>
   );
-}
+};
 
 export default App;

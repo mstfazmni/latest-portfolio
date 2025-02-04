@@ -1,7 +1,16 @@
 .navbar-container{
     display: flex;
     justify-content: space-between;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    /* background: rgba(255, 255, 255, 0.9);  */
+    transition: background 0.3s ease-in-out;
+    background: transparent !important;
 }
+
 
 /* Left section styling */
 .my-logo{
@@ -25,7 +34,9 @@
 .ul-calss li {
     position: relative;
     padding-right: 20px; /* Space for the pipe symbol */
+    /* color: gray; */
 }
+
 
 .ul-calss li::after {
     content: '|';
@@ -36,4 +47,13 @@
 /* Remove pipe after the last item */
 .ul-calss li:last-child::after {
     content: ''; /* Remove the pipe symbol from the last item */
+}
+
+/* Change color of links inside list items */
+.ul-calss li a {
+    color: #131313;
+    text-decoration: none;  
+}
+  .ul-calss li a:hover {
+    color: #484848;  
 }
