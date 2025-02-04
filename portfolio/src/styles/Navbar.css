@@ -1,0 +1,39 @@
+.navbar-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Left section styling */
+.my-logo{
+    width: 100px;
+}
+
+
+/* Right section styling */
+.right-sec{
+    display: flex;
+    align-items: center;
+}
+.ul-calss{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    list-style-type: none; /* Remove the default list bullets */
+    padding: 0;
+}
+
+.ul-calss li {
+    position: relative;
+    padding-right: 20px; /* Space for the pipe symbol */
+}
+
+.ul-calss li::after {
+    content: '|';
+    position: absolute;
+    right: 0;
+}
+
+/* Remove pipe after the last item */
+.ul-calss li:last-child::after {
+    content: ''; /* Remove the pipe symbol from the last item */
+}
