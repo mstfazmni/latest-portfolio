@@ -1,5 +1,16 @@
 import React from "react";
 import { motion } from "framer-motion";
+import "../styles/Works.css";
+
+import work1 from '../assets/1.jpg';
+import work2 from '../assets/2.jpg';
+import work3 from '../assets/3.jpg';
+
+const works = [
+  {name: "Task Management", img: work1},
+  {name: "Introduction", img: work2},
+  {name: "To-Do-List", img: work3}
+]
 
 function Works() {
   return (
@@ -9,8 +20,14 @@ function Works() {
       exit={{ opacity: 0 }}
       transition={{ duration: 0.5 }}
     >
-      <h1 className="text-center text-4xl">My Projects</h1>
-      {/* Add your projects content here */}
+      <div className="works-container">
+          {works.map((work, index) => (
+              <div className="card-wrapper" key={index}>
+                <span className="work-name">{work.name}</span>
+                <div className="card" style={{ backgroundImage : `url(${work.img})`}}></div>
+            </div>
+          ))}
+      </div>
     </motion.div>
   );
 }

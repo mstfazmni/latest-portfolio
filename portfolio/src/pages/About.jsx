@@ -16,7 +16,22 @@ const About = () => {
         Your browser does not support the video tag.
       </video>
       <div className="overlay">
-        <h1>My Story</h1>
+      <motion.h1
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, ease: "easeOut" }}
+          >
+            {"My Story".split("").map((char, index) => (
+              <motion.span
+                key={index}
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: index * 0.1 }}
+              >
+                {char}
+              </motion.span>
+            ))}
+          </motion.h1>
         <p>
             Hey there! I’m Mo, a software developer who turns code into captivating user experiences
             (with just a dash of magic).

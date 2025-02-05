@@ -53,6 +53,8 @@
 .ul-calss li a {
     color: #131313;
     text-decoration: none;  
+    font-family: 'Grandiflora One', sans-serif;
+    font-weight: 600;
 }
   .ul-calss li a:hover {
     color: #484848;  
