@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap');
+
 /* Reset body margin and set font family globally */
 body, html {
     margin: 0;
@@ -19,6 +21,7 @@ body, html {
     font-weight: bold;  
     color: #2c2c2c;  
     margin-bottom: 10px;
+    font-family: 'Oswald', sans-serif;
   }
   .left-sec p {
     font-size: 1.6rem;  

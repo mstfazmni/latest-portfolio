@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap');
 .about-container {
     position: relative;
     width: 100vw;
@@ -29,6 +30,7 @@
 
 .overlay h1 {
     font-size: 5rem;
+    font-family: 'Oswald', sans-serif;
 }
 .overlay p {
     font-size: 1.4rem;

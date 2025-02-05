@@ -24,7 +24,17 @@ function Works() {
           {works.map((work, index) => (
               <div className="card-wrapper" key={index}>
                 <span className="work-name">{work.name}</span>
-                <div className="card" style={{ backgroundImage : `url(${work.img})`}}></div>
+                {/* <div className="card" style={{ backgroundImage : `url(${work.img})`}}></div> */}
+                <motion.img 
+                  src={work.img} 
+                  alt="workImg" 
+                  className="card"
+                  initial={{ scale: 0.8, opacity: 0 }}  
+                  animate={{ scale: 1, opacity: 1 }}  
+                  whileHover={{ scale: 1.1, rotate: 3 }}  
+                  transition={{ duration: 0.3 }}  
+                  />
+            {/* </div> */}
             </div>
           ))}
       </div>

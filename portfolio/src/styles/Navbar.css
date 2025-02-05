@@ -22,6 +22,7 @@
 .right-sec{
     display: flex;
     align-items: center;
+    margin-right: 20px;
 }
 .ul-calss{
     display: flex;
@@ -58,4 +59,14 @@
 }
   .ul-calss li a:hover {
     color: #484848;  
+}
+
+
+/* if pathname is works or contact */
+.white-text {
+    color: white !important;
+}
+
+.white-text:hover {
+    color: #ccc !important; /* Slightly dim on hover */
 }
