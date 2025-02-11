@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yellowtail&display=swap');
+
+body{
+    background-color: #0c0c0c;
+}
+
+.contact-container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact-wrapper{
+     display: flex;
+     justify-content: center;
+     background-color: white;
+     width: 100vw;
+     height: 100vh;
+}
+.contact-left-sec {
+    flex: 1;
+    background-color: #1D1D1D; 
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white; 
+}
+
+.h1-contact {
+    font-family: 'Oswald', sans-serif;
+    font-size: 60px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: -10px;
+    text-align: center;
+}
+
+.span-contact {
+    font-family: 'Yellowtail', cursive;
+    font-size: 60px;
+    color: white;
+    margin-top: -20px;
+    text-align: center;
+}
+
+.left-sec-inside-container {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.input-container {
+    display: flex;
+    gap: 15px;
+}
+input{
+    width: 100%;
+}
+
+input,
+textarea {
+    padding: 12px;
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+    font-size: 16px;
+    outline: none;
+    transition: 0.3s ease-in-out;
+}
+
+textarea {
+    height: 120px; 
+    resize: none; 
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+input:focus,
+textarea:focus {
+    border-color: #ffffff;
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.3);
+}
+
+.action-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.submit-btn {
+    padding: 20px;
+    border: 1px solid white;
+    background: transparent;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 50%;
+}
+
+.submit-btn:hover {
+    background: white;
+    color: black;
+}
+
+/* =================================right section styling================================= */
+.contact-right-sec {
+    flex: 1;
+    display: flex;
+    background-image: url("../assets/contact-background.jpg");
+    background-size: cover; 
+    background-position: center; 
+    justify-content: center; 
+    align-items: center;
+}

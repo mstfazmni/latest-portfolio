@@ -1,18 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap');
 
-/* body {
-    overflow-y: auto;
-    height: 100vh;
-} */
-
+body{
+    background-color: #0c0c0c; /* Dark background */
+}
 .works-container {
     height: 100vh;
     overflow-y: auto; /* Enable vertical scrolling */
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 50px;
-    background-color: #0c0c0c; /* Dark background */
+    gap: 20px;
     padding: 50px 0;
 }
 
@@ -46,6 +43,58 @@
     background-size: cover;
     background-position: center;
     flex: 1;
+    cursor: pointer;
 }
 
 
+/* Media Queries for responsiveness */
+@media (max-width: 1200px) {
+    .works-container {
+        padding: 30px 0;
+    }
+
+    .work-name {
+        font-size: 30px; /* Adjust text size for medium screens */
+        text-align: center; /* Center text on medium screens */
+    }
+
+    .card-wrapper {
+        width: 90%;
+        gap: 15px; /* Reduce gap */
+    }
+
+    .card {
+        height: 250px; /* Reduce height of cards */
+    }
+}
+
+@media (max-width: 768px) {
+    .works-container {
+        padding: 20px 0;
+    }
+
+    .work-name {
+        font-size: 24px; /* Smaller text for mobile */
+        text-align: center; /* Center text on small screens */
+    }
+
+    .card-wrapper {
+        width: 100%; /* Full width of screen */
+        flex-direction: column; /* Stack elements vertically */
+        gap: 10px;
+    }
+
+    .card {
+        height: 200px; /* Adjust card height for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .work-name {
+        font-size: 20px; /* Even smaller text for very small screens */
+    }
+
+    .card {
+        height: 180px; /* Smaller card for very small screens */
+    }
+}

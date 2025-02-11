@@ -5,11 +5,13 @@ import "../styles/Works.css";
 import work1 from '../assets/1.jpg';
 import work2 from '../assets/2.jpg';
 import work3 from '../assets/3.jpg';
+import work4 from '../assets/4.jpg';
 
 const works = [
   {name: "Task Management", img: work1},
   {name: "Introduction", img: work2},
-  {name: "To-Do-List", img: work3}
+  {name: "To-Do-List", img: work3},
+  {name: "Puzzle", img: work4}
 ]
 
 function Works() {
