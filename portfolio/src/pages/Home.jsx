@@ -2,8 +2,18 @@ import React from "react";
 import { motion } from "framer-motion";
 import myPic from '../assets/my-pic.png';
 import '../styles/Home.css';
+import downloadIcon from '../assets/download.png';
 
 const Home = () => {
+
+    // handle downloading my resume
+    const handleDownloadResume = () => {
+        const link = document.createElement('a');
+        link.href = '/cv.pdf';
+        link.download = 'mostafa-zamani-cv.pdf';
+        link.click();
+    };
+
     return(
         <motion.div
         initial={{ opacity: 0 }}
@@ -29,8 +39,13 @@ const Home = () => {
                 ))}
                 </motion.h1>
 
-                    <p> Join me on this unforgettable journey.</p>
-                <h2>Download my Resume</h2>
+                <p> Join me on this unforgettable journey.</p>
+
+                <h2>View My Professional Background</h2>
+                <button onClick={handleDownloadResume} className="download-pdf">
+                <img src={downloadIcon} alt="Download icon" style={{ width: "20px", marginRight: "10px" }} />
+                    Get My Resume
+                </button>
                 </section>
 
                 <section className="right-sec">

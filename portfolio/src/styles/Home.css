@@ -29,6 +29,44 @@ body, html {
   font-weight: 500;
   font-family: 'Grandiflora One', sans-serif;
 }
+h2 {
+    font-size: 1.8rem;
+    font-weight: 600; 
+    color: #2c2c2c;
+    margin-top: 20px; 
+    margin-bottom: 10px; 
+    font-family: 'Oswald', sans-serif; 
+}
+
+.download-pdf {
+  background-color: #2c2c2c;
+  color: #fff; 
+  border: none; 
+  padding: 10px 20px; 
+  font-size: 1rem; 
+  border-radius: 30px; 
+  cursor: pointer; 
+  transition: all 0.3s ease; 
+  display: inline-flex;
+  /* align-items: center; */
+}
+.download-pdf:hover {
+  background-color: #454545; 
+  transform: translateY(-2px); 
+}
+.download-pdf:focus {
+  outline: none; 
+}
+
+.download-pdf:active {
+  transform: translateY(1px); 
+}
+
+/* Optional icon for the button (if desired) */
+.download-pdf::before {
+  /* content: url('path/to/icon.svg');  */
+  margin-right: 10px; /* Space between the icon and text */
+}
 
 /* Right section styling */
 .my-pic {
@@ -42,6 +80,13 @@ body, html {
   .home-container {
       flex-direction: column; 
       padding: 20px;
+  }
+
+  .left-sec{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   .left-sec h1 {
@@ -72,5 +117,8 @@ body, html {
 
   .my-pic {
       width: 250px;  /* Adjust image size for very small screens */
+  }
+  h2{
+    font-size: 1.2rem;
   }
 }
