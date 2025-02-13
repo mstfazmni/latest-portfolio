@@ -11,7 +11,7 @@ const About = () => {
       transition={{ duration: 0.5 }}  
     >
     <div className="about-container">
-      <video className="bg-video" autoPlay loop muted>
+      <video className="bg-video" autoPlay loop muted playsInline>
         <source src={myVideo} type="video/mp4"/>
         Your browser does not support the video tag.
       </video>

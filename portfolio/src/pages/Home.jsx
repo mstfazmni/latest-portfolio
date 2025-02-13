@@ -30,6 +30,7 @@ const Home = () => {
                 </motion.h1>
 
                     <p> Join me on this unforgettable journey.</p>
+                <h2>Download my Resume</h2>
                 </section>
 
                 <section className="right-sec">
@@ -42,7 +43,6 @@ const Home = () => {
                 whileHover={{ scale: 1.1, rotate: 3 }}  
                 transition={{ duration: 0.3 }}  
                 />
-                    {/* <img src={myPic} alt="myPic" className="my-pic"></img> */}
                 </section>
             </div>
 

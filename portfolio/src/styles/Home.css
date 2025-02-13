@@ -1,37 +1,76 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap');
-
-/* Reset body margin and set font family globally */
 body, html {
-    margin: 0;
-    padding: 0;
-    font-family: 'Arial', sans-serif;  /* You can use any font you like */
-    overflow: hidden;  /* Remove scrollbar */
-  }
-  
-.home-container{
-    height: 100vh;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    background-color: #ffffff;
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  overflow-x: hidden;  
 }
+
+.home-container {
+  height: 100vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #ffffff;
+  flex-direction: row;  
+}
+
 /* Left section styling */
 .left-sec h1 {
-    font-size: 5rem;  
-    font-weight: bold;  
-    color: #2c2c2c;  
-    margin-bottom: 10px;
-    font-family: 'Oswald', sans-serif;
-  }
-  .left-sec p {
-    font-size: 1.6rem;  
-    color: #000000;  
-    font-weight: 500;
-    font-family: 'Grandiflora One', sans-serif;
-  }
+  font-size: 5rem;
+  font-weight: bold;
+  color: #2c2c2c;
+  margin-bottom: 10px;
+  font-family: 'Oswald', sans-serif;
+}
+
+.left-sec p {
+  font-size: 1.6rem;
+  color: #000000;
+  font-weight: 500;
+  font-family: 'Grandiflora One', sans-serif;
+}
+
 /* Right section styling */
 .my-pic {
-    width: 300px;  
-    border-radius: 50px;
-    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);  */
+  width: 300px;
+  border-radius: 50px;
+  transition: all 0.2s ease;
+}
+
+/* Mobile responsive adjustments */
+@media (max-width: 768px) {
+  .home-container {
+      flex-direction: column; 
+      padding: 20px;
   }
+
+  .left-sec h1 {
+      font-size: 3rem;  /* Smaller font size */
+  }
+
+  .left-sec p {
+      font-size: 1.2rem;  /* Adjust paragraph size */
+  }
+
+  .my-pic {
+      width: 300px;  
+  }
+}
+
+@media (max-width: 480px) {
+  .home-container {
+      flex-direction: column;  /* Ensure sections stack on very small screens */
+  }
+
+  .left-sec h1 {
+      font-size: 2.5rem;  /* Further reduce font size */
+  }
+
+  .left-sec p {
+      font-size: 1rem;  /* Smaller text for mobile */
+  }
+
+  .my-pic {
+      width: 250px;  /* Adjust image size for very small screens */
+  }
+}
