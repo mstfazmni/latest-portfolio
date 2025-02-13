@@ -11,10 +11,11 @@ body{
     align-items: center;
     gap: 20px;
     padding: 50px 0;
+    margin-top: 50px;
 }
 
 .card-wrapper {
-     display: flex;
+    display: flex;
     align-items: center;
     width: 80%; /* Control width */
     gap: 20px;
@@ -45,7 +46,14 @@ body{
     flex: 1;
     cursor: pointer;
 }
-
+.image-wrapper {
+    display: block;
+    width: 50%;
+  }
+  
+  .image-wrapper a {
+    display: block;
+  }
 
 /* Media Queries for responsiveness */
 @media (max-width: 1200px) {
@@ -54,17 +62,17 @@ body{
     }
 
     .work-name {
-        font-size: 30px; /* Adjust text size for medium screens */
-        text-align: center; /* Center text on medium screens */
+        font-size: 30px; 
+        text-align: center; 
     }
 
     .card-wrapper {
         width: 90%;
-        gap: 15px; /* Reduce gap */
+        gap: 15px; 
     }
 
     .card {
-        height: 250px; /* Reduce height of cards */
+        height: 250px; 
     }
 }
 
@@ -74,27 +82,27 @@ body{
     }
 
     .work-name {
-        font-size: 24px; /* Smaller text for mobile */
-        text-align: center; /* Center text on small screens */
+        font-size: 24px; 
+        text-align: center; 
     }
 
     .card-wrapper {
-        width: 100%; /* Full width of screen */
-        flex-direction: column; /* Stack elements vertically */
+        width: 100%; 
+        flex-direction: column; 
         gap: 10px;
     }
 
     .card {
-        height: 200px; /* Adjust card height for smaller screens */
+        height: 200px; 
     }
 }
 
 @media (max-width: 480px) {
     .work-name {
-        font-size: 20px; /* Even smaller text for very small screens */
+        font-size: 20px; 
     }
 
     .card {
-        height: 180px; /* Smaller card for very small screens */
+        height: 180px; 
     }
 }
