@@ -19,19 +19,15 @@ const Contact = () => {
               <span className="span-contact">touch</span>
               <div className="left-sec-inside-container">
 
-                {/* Netlify Form */}
-                 <form name="contact" method="POST" data-netlify="true">
-                    <input type="hidden" name="form-name" value="contact" />
-                    <div className="input-container">
-                      <input type="text" name="name" placeholder="Your name" required />
-                      <input type="email" name="email" placeholder="Your email address" required />
-                    </div>
-                    <div className="action-container">
-                      <textarea name="message" placeholder="Write to me..." required></textarea>
-                      <button type="submit" className="submit-btn">Submit</button>
-                    </div>
-                </form>
-
+                <div className="input-container">
+                    <input type="text" placeholder="Your name"/>
+                    <input type="email" placeholder="Your email address"/>
+                </div>
+                
+                <div className="action-container">
+                    <textarea placeholder="Write to me..."></textarea>
+                    <button className="submit-btn">Submit</button>
+                </div>
                 
               </div>
           </section>

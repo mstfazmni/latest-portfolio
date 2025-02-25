@@ -8,10 +8,13 @@ import work3 from '../assets/3.jpg';
 import work4 from '../assets/4.jpg';
 
 const works = [
-  {name: "Task Management", img: work1, link: "https://mz-task-management.netlify.app/"},
-  {name: "Introduction", img: work2, link: "https://mz-portfolio-mz.netlify.app/"},
-  {name: "To-Do-List", img: work3, link: "#"},
-  {name: "Puzzle", img: work4, link: "#"}
+  {name: "Task Management", img: work1, link: "https://mz-task-management.netlify.app"},
+  {name: "Introduction", img: work2, link: "https://mz-portfolio-mz.netlify.app"},
+  {name: "blkrouge", img: work3, link: "https://blkrouge.netlify.app"},
+  {name: "CIRUS", img: work4, link: "https://cirus-cirus.netlify.app"},
+  {name: "Color Picker", img: work4, link: "https://mzcolorpicker.netlify.app"},
+  {name: "List Of Food", img: work4, link: "https://mz-list-of-food.netlify.app"},
+  {name: "To Do List", img: work4, link: "https://mz-to-do-list.netlify.app"}
 ]
 
 function Works() {
