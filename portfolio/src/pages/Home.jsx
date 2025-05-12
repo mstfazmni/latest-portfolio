@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import myPic from '../assets/my-pic.png';
+// import myPic from '../assets/my-pic.png';
 import '../styles/Home.css';
 import downloadIcon from '../assets/download.png';
 
@@ -22,6 +22,7 @@ const Home = () => {
         transition={{ duration: 0.5 }}
       >
             <div className="home-container">
+                {/* Left section */}
                 <section className="left-sec">
                 <motion.h1
                     whileHover={{ y: -10, scale: 1.1, color: "#454545" }}  
@@ -48,16 +49,16 @@ const Home = () => {
                 </button>
                 </section>
 
+                {/* Right section */}
                 <section className="right-sec">
-                <motion.img 
-                src={myPic} 
-                alt="myPic" 
-                className="my-pic"
-                initial={{ scale: 0.8, opacity: 0 }}  
-                animate={{ scale: 1, opacity: 1 }}  
-                whileHover={{ scale: 1.1, rotate: 3 }}  
-                transition={{ duration: 0.3 }}  
-                />
+                    <div className="skill-icons">
+                    <i className="devicon-react-original colored" title="React"></i>
+                    <i className="devicon-javascript-plain colored" title="JavaScript"></i>
+                    <i className="devicon-html5-plain colored" title="HTML5"></i>
+                    <i className="devicon-css3-plain colored" title="CSS3"></i>
+                    <i className="devicon-bootstrap-plain colored" title="Bootstrap"></i>
+                    <i className="devicon-git-plain colored" title="Git"></i>
+                    </div>
                 </section>
             </div>
 

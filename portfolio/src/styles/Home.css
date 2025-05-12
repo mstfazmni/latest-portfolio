@@ -69,10 +69,24 @@ h2 {
 }
 
 /* Right section styling */
-.my-pic {
-  width: 300px;
-  border-radius: 50px;
-  transition: all 0.2s ease;
+.skill-icons{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+  align-items: center;
+  max-width: 300px;
+  padding: 20px;
+}
+
+.skill-icons i {
+  font-size: 48px;
+  transition: transform 0.3s ease;
+  cursor: default;
+}
+
+.skill-icons i:hover {
+  transform: scale(1.2);
 }
 
 /* Mobile responsive adjustments */
@@ -97,8 +111,9 @@ h2 {
       font-size: 1.2rem;  /* Adjust paragraph size */
   }
 
-  .my-pic {
-      width: 300px;  
+  .skill-icons {
+    justify-content: center;
+    /* max-width: 100%; */
   }
 }
 
