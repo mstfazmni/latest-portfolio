@@ -69,6 +69,27 @@ h2 {
 }
 
 /* Right section styling */
+.skills-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skills-section h3 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #2c2c2c;
+  margin-bottom: 20px;
+  font-family: 'Oswald', sans-serif;
+  letter-spacing: 1px;
+}
+.skills-divider {
+  width: 50%;
+  border: none;
+  border-top: 2px solid #e0e0e0;
+  margin: 20px 0;
+}
+
 .skill-icons{
   display: flex;
   flex-wrap: wrap;
@@ -113,7 +134,7 @@ h2 {
 
   .skill-icons {
     justify-content: center;
-    /* max-width: 100%; */
+    max-width: 100%;
   }
 }
 

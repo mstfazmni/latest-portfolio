@@ -51,6 +51,9 @@ const Home = () => {
 
                 {/* Right section */}
                 <section className="right-sec">
+                <div className="skills-section">
+                    <h3>Skills</h3>
+                    <hr className="skills-divider" />
                     <div className="skill-icons">
                     <i className="devicon-react-original colored" title="React"></i>
                     <i className="devicon-javascript-plain colored" title="JavaScript"></i>
@@ -59,6 +62,7 @@ const Home = () => {
                     <i className="devicon-bootstrap-plain colored" title="Bootstrap"></i>
                     <i className="devicon-git-plain colored" title="Git"></i>
                     </div>
+                </div>
                 </section>
             </div>
 
