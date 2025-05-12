@@ -61,6 +61,8 @@ const Home = () => {
                     <i className="devicon-css3-plain colored" title="CSS3"></i>
                     <i className="devicon-bootstrap-plain colored" title="Bootstrap"></i>
                     <i className="devicon-git-plain colored" title="Git"></i>
+                    <i className="devicon-csharp-plain colored" title="C#"></i>
+                    <i className="devicon-java-plain colored" title="java"></i>
                     </div>
                 </div>
                 </section>
