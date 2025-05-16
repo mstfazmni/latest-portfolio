@@ -72,6 +72,7 @@ const ProjectPage = () => {
                 initial={{ opacity: 0, x: 100, scale: 0.95 }}
                 animate={{ opacity: 1, x: 0, scale: 1 }}
                 transition={{ duration: 0.7, ease: "easeOut" }}
+                whileHover={{ scale: 1, rotate: 1 }}
                 />
                 
                 
