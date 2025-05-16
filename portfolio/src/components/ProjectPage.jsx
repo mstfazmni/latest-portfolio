@@ -2,6 +2,7 @@ import React from "react";
 import { useParams } from "react-router-dom";
 import "./ProjectPage.css";
 import projects from "../data/projects";
+import {motion} from "framer-motion";
 
 const ProjectPage = () => {
     const {id} = useParams();
@@ -12,17 +13,55 @@ const ProjectPage = () => {
     return(
         <div className="project-container">
             <section className="left-section">
-                <h1>{project.name}</h1>
+                <motion.h1
+                initial={{ y: -50, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{ duration: 0.6, ease: "easeOut" }}
+                >
+                {project.name}
+                </motion.h1>
+
+                <hr className="devider"></hr>
+
                 <p>{project.description}</p>
-                
+
+                <motion.ul
+                initial="hidden"
+                animate="visible"
+                variants={{
+                    visible: {
+                    transition: {
+                        staggerChildren: 0.1
+                    }
+                    }
+                }}
+                >
+                {project.tech.map((t) => (
+                    <motion.li
+                    key={t}
+                    variants={{
+                        hidden: { opacity: 0, y: 10 },
+                        visible: { opacity: 1, y: 0 }
+                    }}
+                    >
+                    {t}
+                    </motion.li>
+                ))}
+                </motion.ul>
+
             </section>
+            {/* Right Section */}
             <section className="right-section">
-                <img src={project.img} alt={project.name} className="project-img" />
-                <ul>
-                    {project.tech.map((t)=> (
-                        <li key={t}>{t}</li>
-                    ))}
-                </ul>
+
+                <motion.img
+                src={project.img}
+                alt={project.name}
+                className="project-img"
+                initial={{ opacity: 0, x: 100, scale: 0.95 }}
+                animate={{ opacity: 1, x: 0, scale: 1 }}
+                transition={{ duration: 0.7, ease: "easeOut" }}
+                />
+                
                 <a href={project.link} target="_blank" rel="noopener noreferrer">Live Site</a>
 
             </section>
