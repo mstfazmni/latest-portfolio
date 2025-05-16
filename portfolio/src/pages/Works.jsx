@@ -2,14 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import "../styles/Works.css";
 
-import work1 from '../assets/1.jpg';
-import work2 from '../assets/2.jpg';
-import work3 from '../assets/3.jpg';
-import work4 from '../assets/4.jpg';
-import work5 from '../assets/4.jpg';
-import work6 from '../assets/4.jpg';
-import work7 from '../assets/4.jpg';
-import work8 from '../assets/4.jpg';
+
 
 
 const works = [
