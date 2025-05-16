@@ -49,6 +49,18 @@ const ProjectPage = () => {
                 ))}
                 </motion.ul>
 
+                <motion.a
+                href={project.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="live-link"
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.5, duration: 0.5, ease: "easeOut" }}
+                >
+                🔗 Live Site
+                </motion.a>
+
             </section>
             {/* Right Section */}
             <section className="right-section">
@@ -62,7 +74,7 @@ const ProjectPage = () => {
                 transition={{ duration: 0.7, ease: "easeOut" }}
                 />
                 
-                <a href={project.link} target="_blank" rel="noopener noreferrer">Live Site</a>
+                
 
             </section>
         </div>
