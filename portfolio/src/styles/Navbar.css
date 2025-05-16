@@ -51,7 +51,7 @@
 
 /* Change color of links inside list items */
 .ul-calss li a {
-    /* color: #131313; */
+    color: #131313;
     text-decoration: none;  
     font-family: 'Grandiflora One', sans-serif;
     font-weight: 600;
@@ -60,25 +60,30 @@
     color: #484848;  
 }
 
-
-
-/* Light theme */
-.navbar-light .ul-calss li a {
-  color: #131313;
-}
-
-.navbar-light .ul-calss li a:hover {
+.ul-calss li a:hover {
   color: #484848;
 }
 
-/* Dark theme */
-.navbar-dark .ul-calss li a {
-  color: white;
+.white-text {
+  color: white !important;
 }
 
-.navbar-dark .ul-calss li a:hover {
-  color: #ccc;
+.white-text:hover {
+  color: #ccc !important;
 }
+
+/* Pipe color control */
+.ul-calss li::after {
+  content: '|';
+  position: absolute;
+  right: 0;
+  color: currentColor; /* this makes the pipe match the text color */
+}
+
+/* .navbar-dark .ul-calss li a {
+  color: white;
+} */
+
 .navbar-dark .ul-calss li::after {
   color: white;
 }
