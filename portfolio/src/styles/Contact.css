@@ -55,6 +55,7 @@ body{
 .input-container {
     display: flex;
     gap: 15px;
+    margin-bottom: 15px;
 }
 input{
     width: 100%;
@@ -109,6 +110,22 @@ textarea:focus {
 .submit-btn:hover {
     background: white;
     color: black;
+}
+.success-msg {
+    color: white; /* Green for success */
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+    background-color: rgba(140, 140, 140, 0.194);
+    padding: 12px;
+    border: 1px solid rgb(112, 112, 112);
+    border-radius: 8px;
+    animation: fadeIn 0.5s ease-in-out;
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-5px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
 /* =================================right section styling================================= */
