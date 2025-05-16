@@ -45,4 +45,6 @@ const projects = [
         description: "A second portfolio just to fullfill my obsession over developing new websites and getting better!",
         tech: ["React", "JavaScript", "Motion Frame", "UI/UX"]
     },
-]
+];
+
+export default projects;
