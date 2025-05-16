@@ -1,7 +1,7 @@
-import work1 from '../assets/1.jpg';
-import work2 from '../assets/2.jpg';
-import work3 from '../assets/3.jpg';
-import work4 from '../assets/4.jpg';
+import work1 from '../assets/1.png';
+import work2 from '../assets/2.png';
+import work3 from '../assets/3.png';
+import work4 from '../assets/4.png';
 
 
 const projects = [
@@ -14,13 +14,21 @@ const projects = [
         tech: ["React", "Framer Motion", "Tailwind CSS"]
     },
     {
-        id: "introduction",
-        name: "Introduction",
+        id: "portfolio-v2",
+        name: "Portfolio V2",
         img: work2,
-        link: "https://mz-portfolio-mz.netlify.app",
-        description: "An animated personal intro page with smooth transitions and parallax effects.",
-        tech: ["HTML", "CSS", "JavaScript"]
+        link: "https://portfolio-v2-mz.netlify.app",
+        description: "A second portfolio just to fullfill my obsession over developing new websites and getting better!",
+        tech: ["React", "JavaScript", "Motion Frame", "UI/UX"]
     },
+    // {
+    //     id: "introduction",
+    //     name: "Introduction",
+    //     img: work2,
+    //     link: "https://mz-portfolio-mz.netlify.app",
+    //     description: "An animated personal intro page with smooth transitions and parallax effects.",
+    //     tech: ["HTML", "CSS", "JavaScript"]
+    // },
     {
         id: "movie-app",
         name: "Movie App",
@@ -32,19 +40,12 @@ const projects = [
     {
         id: "blkrouge",
         name: "BLKROUGE",
-        img: work3,
+        img: work4,
         link: "https://blkrouge.netlify.app",
         description: "An E-commerce website for selling clothing based in Calgary.",
         tech: ["JavaScript", "HTML", "CSS"]
     },
-    {
-        id: "portfolio-v2",
-        name: "Portfolio V2",
-        img: work4,
-        link: "https://portfolio-v2-mz.netlify.app",
-        description: "A second portfolio just to fullfill my obsession over developing new websites and getting better!",
-        tech: ["React", "JavaScript", "Motion Frame", "UI/UX"]
-    },
+   
 ];
 
 export default projects;
