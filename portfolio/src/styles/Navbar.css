@@ -6,7 +6,6 @@
     top: -20px;
     left: 0;
     z-index: 100;
-    /* background: rgba(255, 255, 255, 0.9);  */
     transition: background 0.3s ease-in-out;
     background: transparent !important;
 }
@@ -28,13 +27,13 @@
     display: flex;
     flex-direction: row;
     gap: 10px;
-    list-style-type: none; /* Remove the default list bullets */
+    list-style-type: none; 
     padding: 0;
 }
 
 .ul-calss li {
     position: relative;
-    padding-right: 20px; /* Space for the pipe symbol */
+    padding-right: 20px; 
     /* color: gray; */
 }
 
@@ -47,12 +46,12 @@
 
 /* Remove pipe after the last item */
 .ul-calss li:last-child::after {
-    content: ''; /* Remove the pipe symbol from the last item */
+    content: ''; 
 }
 
 /* Change color of links inside list items */
 .ul-calss li a {
-    color: #131313;
+    /* color: #131313; */
     text-decoration: none;  
     font-family: 'Grandiflora One', sans-serif;
     font-weight: 600;
@@ -62,11 +61,24 @@
 }
 
 
-/* if pathname is works or contact */
-.white-text {
-    color: white !important;
+
+/* Light theme */
+.navbar-light .ul-calss li a {
+  color: #131313;
 }
 
-.white-text:hover {
-    color: #ccc !important; /* Slightly dim on hover */
+.navbar-light .ul-calss li a:hover {
+  color: #484848;
+}
+
+/* Dark theme */
+.navbar-dark .ul-calss li a {
+  color: white;
+}
+
+.navbar-dark .ul-calss li a:hover {
+  color: #ccc;
+}
+.navbar-dark .ul-calss li::after {
+  color: white;
 }
