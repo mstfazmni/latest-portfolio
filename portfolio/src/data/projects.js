@@ -1,7 +1,7 @@
-import work1 from '../assets/1.png';
-import work2 from '../assets/2.png';
-import work3 from '../assets/3.png';
-import work4 from '../assets/4.png';
+import taskmg from '../assets/taskmg.png';
+import portfoliov2 from '../assets/portfoliov2.png';
+import movieapp from '../assets/movieapp.png';
+import blkrouge from '../assets/blkrouge.png';
 import TravelBotImg from '../assets/travelbot.png';
 
 const projects = [
@@ -20,7 +20,7 @@ const projects = [
     {
         id: "task-management",
         name: "Task Management",
-        img: work1,
+        img: taskmg,
         link: "https://mz-task-management.netlify.app",
         description: "A Kanban-style task board with drag-and-drop, task categories, and real-time updates.",
         tech: ["React", "Framer Motion", "Tailwind CSS"]
@@ -28,23 +28,15 @@ const projects = [
     {
         id: "portfolio-v2",
         name: "Portfolio V2",
-        img: work2,
+        img: portfoliov2,
         link: "https://portfolio-v2-mz.netlify.app",
         description: "A second portfolio just to fullfill my obsession over developing new websites and getting better!",
         tech: ["React", "JavaScript", "Motion Frame", "UI/UX"]
     },
-    // {
-    //     id: "introduction",
-    //     name: "Introduction",
-    //     img: work2,
-    //     link: "https://mz-portfolio-mz.netlify.app",
-    //     description: "An animated personal intro page with smooth transitions and parallax effects.",
-    //     tech: ["HTML", "CSS", "JavaScript"]
-    // },
     {
         id: "movie-app",
         name: "Movie App",
-        img: work3,
+        img: movieapp,
         link: "https://movie-app-mz.netlify.app",
         description: "Fetches and displays movies using an external API. Includes search and favorites.",
         tech: ["React", "API", "CSS Modules"]
@@ -52,7 +44,7 @@ const projects = [
     {
         id: "blkrouge",
         name: "BLKROUGE",
-        img: work4,
+        img: blkrouge,
         link: "https://blkrouge.netlify.app",
         description: "An E-commerce website for selling clothing based in Calgary.",
         tech: ["JavaScript", "HTML", "CSS"]
