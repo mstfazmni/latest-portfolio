@@ -9,7 +9,7 @@ const projects = [
         id: "travel-bot",
         name: "TravelBot",
         img: TravelBotImg,
-        link: "", // add live/demo URL here if you have one
+        link: "https://travelbot-mz.netlify.app", 
         description: `
             TravelBot is an AI-powered chatbot designed to make travel planning effortless and personalized. Using OpenAI's GPT technology, TravelBot interacts with users by asking a set of tailored questions about their travel preferences such as destination, duration, budget, and interests. Based on these inputs, it generates multiple detailed travel itineraries that include places to visit, activities, highlights, and estimated costs.
             Built with React for a smooth and responsive user experience, TravelBot not only helps users decide where to go but also offers creative and unique travel plans. It demonstrates my skills in frontend development, API integration, and conversational AI.
