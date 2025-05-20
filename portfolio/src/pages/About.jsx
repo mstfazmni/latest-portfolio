@@ -33,7 +33,7 @@ const About = () => {
             ))}
           </motion.h1>
         <p>
-            Hey there! I’m Mo, a software developer who turns code into captivating user experiences
+            Hey there! I’m Mostafa, a software developer who turns code into captivating user experiences
             (with just a dash of magic).
             Whether it’s crafting pixel-perfect designs or building seamless back-end solutions,
             I bring a passion for clean, responsive, and engaging websites.

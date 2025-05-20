@@ -28,7 +28,7 @@ const Home = () => {
                     whileHover={{ y: -10, scale: 1.1, color: "#454545" }}  
                     transition={{ type: "spring", stiffness: 300 }}
                 >
-                {"Hi, this is Mo...".split("").map((char, index) => (
+                {"Hi, this is Mostafa...".split("").map((char, index) => (
                     <motion.span
                     key={index}
                     initial={{ opacity: 0, y: 20 }}
