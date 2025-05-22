@@ -99,7 +99,7 @@ body{
 
     .card-wrapper {
         width: 100%; 
-        flex-direction: column; 
+        flex-direction: column !important; 
         gap: 10px;
     }
 
