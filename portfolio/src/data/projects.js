@@ -33,14 +33,14 @@ const projects = [
         description: "A second portfolio just to fullfill my obsession over developing new websites and getting better!",
         tech: ["React", "JavaScript", "Motion Frame", "UI/UX"]
     },
-    {
-        id: "movie-app",
-        name: "Movie App",
-        img: movieapp,
-        link: "https://movie-app-mz.netlify.app",
-        description: "Fetches and displays movies using an external API. Includes search and favorites.",
-        tech: ["React", "API", "CSS Modules"]
-    },
+    // {
+    //     id: "movie-app",
+    //     name: "Movie App",
+    //     img: movieapp,
+    //     link: "https://movie-app-mz.netlify.app",
+    //     description: "Fetches and displays movies using an external API. Includes search and favorites.",
+    //     tech: ["React", "API", "CSS Modules"]
+    // },
     {
         id: "blkrouge",
         name: "BLKROUGE",
