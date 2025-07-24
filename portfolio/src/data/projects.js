@@ -1,8 +1,9 @@
 import taskmg from '../assets/taskmg.png';
 import portfoliov2 from '../assets/portfoliov2.png';
-import movieapp from '../assets/movieapp.png';
+// import movieapp from '../assets/movieapp.png';
 import blkrouge from '../assets/blkrouge.png';
 import TravelBotImg from '../assets/travelbot.png';
+import avConstruction from '../assets/av-construction.png';
 
 const projects = [
     {
@@ -16,6 +17,14 @@ const projects = [
             This project reflects my passion for combining technology with real-world applications to enhance user experiences and solve everyday problems.
         `,
         tech: ["React", "OpenAI", "Node.js", "Framer Motion", "API Integration"]
+    },
+      {
+        id: "av-construction",
+        name: "Av Construction",
+        img: avConstruction,
+        link: "https://av-construction.netlify.app/",
+        description: "A Construction website for my client to get more leads and connect with more DIYs.",
+        tech: ["React", "Framer Motion", "Bootsrap"]
     },
     {
         id: "task-management",
