@@ -28,7 +28,8 @@ const Home = () => {
                     whileHover={{ y: -10, scale: 1.1, color: "#454545" }}  
                     transition={{ type: "spring", stiffness: 300 }}
                 >
-                {"Hi, this is Mostafa...".split("").map((char, index) => (
+                {"Hi, I'm Mostafa – a passionate Junior Developer"
+                .split("").map((char, index) => (
                     <motion.span
                     key={index}
                     initial={{ opacity: 0, y: 20 }}
@@ -40,9 +41,9 @@ const Home = () => {
                 ))}
                 </motion.h1>
 
-                <p> Join me on this unforgettable journey.</p>
+                <p>I specialize in building clean, user-focused web apps.</p>
 
-                <h2>View My Professional Background</h2>
+                <h2>Download My Resume & Let's Build Together</h2>
                 <button onClick={handleDownloadResume} className="download-pdf">
                 <img src={downloadIcon} alt="Download icon" style={{ width: "20px", marginRight: "10px" }} />
                     Get My Resume
