@@ -50,15 +50,15 @@ const ProjectPage = () => {
                 </motion.ul>
 
                 <motion.a
-                href={project.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="live-link"
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.5, duration: 0.5, ease: "easeOut" }}
-                >
-                🔗 Live Site
+                    href={project.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="live-link"
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 0.5, duration: 0.5, ease: "easeOut" }}
+                    >
+                    🔗 Live Site
                 </motion.a>
 
             </section>
@@ -75,7 +75,15 @@ const ProjectPage = () => {
                 whileHover={{ scale: 1, rotate: 1 }}
                 />
                 
-                
+                <motion.div 
+                    className="back-arrow" 
+                    initial={{ opacity: 0, x: 0 }} 
+                    animate={{ opacity: 1, x: 0 }} 
+                    transition={{ duration: 0.4 }}
+                    whileHover={{ scale: 1.01 }}
+                    >
+                    <a href="/works" className="arrow-link">← Back to Works</a>
+                </motion.div>
 
             </section>
         </div>
