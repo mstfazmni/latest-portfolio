@@ -3,6 +3,8 @@ import { useParams } from "react-router-dom";
 import "./ProjectPage.css";
 import projects from "../data/projects";
 import {motion} from "framer-motion";
+import { Link } from "react-router-dom";
+
 
 const ProjectPage = () => {
     const {id} = useParams();
@@ -82,7 +84,7 @@ const ProjectPage = () => {
                     transition={{ duration: 0.4 }}
                     whileHover={{ scale: 1.01 }}
                     >
-                    <a href="/works" className="arrow-link">← Back to Works</a>
+                    <Link to="/works" className="arrow-link">← Back to Works</Link>
                 </motion.div>
 
             </section>
