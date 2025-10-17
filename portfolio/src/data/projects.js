@@ -4,8 +4,22 @@ import portfoliov2 from '../assets/portfoliov2.png';
 import blkrouge from '../assets/blkrouge.png';
 import TravelBotImg from '../assets/travelbot.png';
 import avConstruction from '../assets/av-construction.png';
+import vectorImg from '../assets/vector.png';
 
 const projects = [
+    {
+        id: "vector",
+        name: "Vector",
+        img: vectorImg,
+        link: "https://vectorfitness.netlify.app", 
+        description: `
+            Vector is a full-stack fitness web app that blends personalized coaching with AI. 
+            Users can create and track custom workout and diet plans, chat with an AI fitness assistant, 
+            and visualize their progress through interactive charts. 
+            A unique “Fighter Mode” tailors plans for combat athletes preparing for competition.
+        `,
+        tech: ["React", "Node.js","MongoDB", "Express.js", "OpenAI", "JWT", "API Integration"]
+    },
     {
         id: "travel-bot",
         name: "TravelBot",
